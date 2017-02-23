@@ -1,0 +1,21 @@
+{
+  "name": "steg-it",
+  "version": "1.0.0",
+  "description": "NodeJs Steganography cli utility",
+  "main": "stegIt-cli.js",
+  "scripts": {},
+  "author": "ernesto-usal",
+  "license": "MIT",
+  "dependencies": {
+    "bitwise": "^0.2.0",
+    "commander": "^2.9.0",
+    "convert-string": "^0.1.0",
+    "jimp": "^0.2.27",
+    "number-converter": "^1.2.1",
+    "prompt": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ernesto-usal/steg-it"
+  }
+}
