@@ -22,6 +22,7 @@ Incluído con el entorno ya vendrá el gestor de paquetes npm necesario para ins
   #### Ocultar mensaje
   * Para ocultar un mensaje en una imagen, el comando más básico sería ```node stegIt-cli hide <ruta_imagen>``` que pediría la introducción del mensaje por teclado.
   * Está disponible también la opción de leer el mensaje de un fichero utilizando el comando ```node stegIt-cli hide --file <ruta_fichero> <ruta_imagen>```.
+  * La imagen resultante se guardará en la misma ruta que la original con "hacked" al final del nombre.
 
   #### Revelar mensaje
   * Para extraer un mensaje oculto en una imagen, se ejecutará el comando ```node stegIt-cli reveal <ruta_imagen> <tamaño_mensaje>``` 
