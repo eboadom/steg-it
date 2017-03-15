@@ -23,6 +23,7 @@ program
 program
     .command("test <path_image>")
     .description("Test the process hide/reveal end-to-end")
+    .option("-b, --bits <bit_rate>", "Bit rate to put the message into the image (between 4 and 1)")
     .action(stegIt.test);
 
 program.parse(process.argv);
