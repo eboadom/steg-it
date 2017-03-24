@@ -1,34 +1,37 @@
 # STEG-IT.
 
-<strong>(EN CONSTRUCCIÓN 90%)</strong><br>
-Utilidad de esteganografía para ocultar mensajes en imágenes.
+Steganography utility to hide messages into images (png, jpeg, bmp).
 
-### Instalación.
+### Installation.
 
-* Es necesario tener instalado el entorno NodeJS. Si no está instalado, hacerlo desde la página principal de NodeJS https://nodejs.org/es/.
-Incluído con el entorno ya vendrá el gestor de paquetes npm necesario para instalar STEG-IT.
-* Ejecutar el comando ```git clone dirección_repositorio``` en la carpeta donde se desee instalar STEG-IT.
-* Colocarse dentro de la carpeta y ejecutar el comando ```npm install``` para inicializar el proyecto con las dependencias requeridas.
+* It's necessary to have installed the NodeJS environment. If it's not installed, go to NodeJS's web https://nodejs.org/es/.
+  Within the environment is available the package manager npm required to install STEG-IT.
+* Execute the command ```git clone repository_address``` in the folder where you wish to install STEG-IT.
+* Place yourself into the folder and execute ```npm install``` to initialize the project with the required dependencies.
 
-### Instrucciones de uso.
-* Primero hay que navegar con la terminal de comandos a la carpeta del proyecto.
-* Ejecutando el comando ```node stegIt-cli --help``` se podrán ver todas las opciones disponibles en STEGIT.
-* Cada subcomando (```hide``` para ocultar un mensaje y ```reveal``` para recuperar un mensaje oculto de una imagen) dispone de su 
-  ayuda particular para ver sus opciones, por ejemplo, para ver la ayuda de ```hide``` habrá que ejecutar el comando ```node stegIt-cli hide --help```.
+### Usage instructions.
+* First, you must place yourself into the project's folder.
+* The command ```node stegIt-cli --help``` shows the general help for the application with the available options.
+* Each suboption (```hide``` to hide a message and ```reveal``` to recover it) have its individual help to see its options, for
+  example, to see the help of ```hide```, you have to execute the command ```node stegIt-cli hide --help```.
 
-  #### Ocultar mensaje
-  * Para ocultar un mensaje en una imagen, el comando más básico sería ```node stegIt-cli hide <ruta_imagen>``` que pediría la introducción del mensaje por teclado.
-  * Está disponible también la opción de leer el mensaje de un fichero utilizando el comando ```node stegIt-cli hide --file <ruta_fichero> <ruta_imagen>```.
-  * La imagen resultante se guardará en la misma ruta que la original con "hacked" al final del nombre.
-  * Por defecto se utilizará de tasa de bits 4 por cada componente rgb. Se puede cambiar con la opción ```--bits``` de ```hide```.
+  #### Hide message.
+  * To hide a message into an image, the most basic command will be ```node stegIt-cli hide <path_image>``` that will ask for 
+    insertion of the message by keyboard.
+  * It's available too the option to read the message from a file using the command ```node stegIt-cli hide --file <path_file> <path_image>```.
+  * The resulting image will be saved within the same folder of the original with "_hacked" appended at the end.
+  * By default, the bits rate used (number of bits to encode by component rgb) is 4. It's possible to change it with the option
+    ```--bits``` of ```hide```.
 
-  #### Revelar mensaje
-  * Para extraer un mensaje oculto en una imagen, se ejecutará el comando ```node stegIt-cli reveal <ruta_imagen>``` 
-    donde ruta_imagen corresponde a la de la imagen con el mensaje oculto y tamaño_mensaje corresponde al tamaño del mensaje original.
-  * Por defecto se utilizará de tasa de bits 4 por cada componente rgb. Se puede cambiar con la opción ```--bits``` de ```reveal```.
+  #### Recover message.
+  * To extract a hided message from an image, it's must execute the command ```node stegIt-cli reveal <path_image>``` where
+    path_image corresponds to the path of the image with the hided message.
+  * By default, the bits rate used (number of bits to encode by component rgb) is 4. It's possible to change it with the option
+    ```--bits``` of ```hide```.
 
-### Créditos.
-  Esta aplicación usa librerías externas Open Source. A continuación se muestra la dirección del código fuente de las mismas junto con sus licencias.
+### Credits.
+  This application uses external Open Source libraries. Next it's show the addresses of the libraries's code sources along with their
+  licenses.
 
   * Project: number-converter
     <br>Copyright (c) 2015 Brett McLean

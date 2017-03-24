@@ -23,7 +23,7 @@ Incluído con el entorno ya vendrá el gestor de paquetes npm necesario para ins
 
   #### Revelar mensaje
   * Para extraer un mensaje oculto en una imagen, se ejecutará el comando ```node stegIt-cli reveal <ruta_imagen>``` 
-    donde ruta_imagen corresponde a la de la imagen con el mensaje oculto y tamaño_mensaje corresponde al tamaño del mensaje original.
+    donde ruta_imagen corresponde a la de la imagen con el mensaje oculto.
   * Por defecto se utilizará de tasa de bits 4 por cada componente rgb. Se puede cambiar con la opción ```--bits``` de ```reveal```.
 
 ### Créditos.
